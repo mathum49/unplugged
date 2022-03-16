@@ -145,16 +145,12 @@ p {
  
 img {
   width: 100%;
-
- 
 }
 
-header img {
-  width: 60%;
-}
+
  
 figure {
- 
+  margin: 0;
 }
  
 address {
@@ -194,8 +190,14 @@ header .content-wrapper {
   flex-flow: row wrap;
   margin: 0;
   width: 100%;
+}
 
-
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider{
@@ -564,6 +566,11 @@ input[type=button] {
       header .content-wrapper {
           width: 100%;
           justify-content: space-between;
+      }
+
+      header figure {
+        width: 30%;
+
       }
    
       header nav {
