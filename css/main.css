@@ -104,29 +104,36 @@ body {
  
 ul, 
 ol {
-  list-style: none;
-  text-transform: uppercase;
- 
+  list-style-type: none; 
 }
  
 a {
   color: #e2e3ed;
   text-decoration: none;
 }
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25rem;
+  font-weight: 500;
+  margin: 0;
+}
  
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.875em;
+  font-size: 1.875rem;
   font-weight: 500;
+  margin-bottom: 30px;
+  margin-top: 0;
 
 }
  
 h3, 
 h4 {
   font-family: 'Poppins', sans-serif;
-  font-family: 'Poppins', sans-serif;
   margin: 20px 0;
   font-size: 1.125rem;
+  font-weight: 500;
  
 }
  
@@ -140,6 +147,10 @@ img {
   width: 100%;
 
  
+}
+
+header img {
+  width: 60%;
 }
  
 figure {
@@ -156,6 +167,9 @@ address {
   margin: 50px 0;
 }
 
+.newsletter .content-wrapper{
+  margin: 0;
+}
 /* Header & footer Style */
 
 header,
@@ -181,34 +195,48 @@ header .content-wrapper {
   margin: 0;
   width: 100%;
 
+
 }
 
 .header-divider{
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
-  border-top: 1px solid #e2e3ed;
+  background: #3a3a3a; 
 
 }
 
 header nav {
+  width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
+
 }
+
 
 header nav ul{
   display: flex;
   justify-content: space-around;
   width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+header nav ul li{
+  font-size: 1.125em;
 }
 
 header a{
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 60px;
 }
 
 footer {
@@ -277,12 +305,40 @@ aside {
 .form{
   width: 100%;
 }
+
 input {
   width: 320px;
   height: 50px;
-  margin: 15px 0;
+  /* margin: 15px 0; */
   /* padding: 2px; button is not exactly the same width?? */
 }
+
+aside .form {
+  margin: 30px 0;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 
 /* Features */
 
@@ -295,10 +351,11 @@ input {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; 
 }
-
+/* 
 .features h2 {
-  margin-bottom: 60px;
-}
+  margin-bottom: 30px;
+  margin-top: 0;
+} */
 
 .features .features-items {
   display: flex;
@@ -309,7 +366,7 @@ input {
 
 .features-items article {
 
-  width: 60%;
+  width: 63%;
   margin: 30px 0;
 }
 
@@ -329,12 +386,13 @@ input {
 }
 
 
-.reviews h2 {
+/* .reviews h2 {
   margin-bottom: 30px;
-}
+  margin-top: 0;
+} */
 
 .reviews h3 {
-  width: 50%;
+  width: 52%;
   margin: 20px 0;
 }
 
@@ -379,39 +437,24 @@ input {
   flex-flow: row wrap;
 }
 
-.faq h2 {
+/* .faq h2 {
   margin-bottom: 40px;
-}
+} */
 
 .faq-content {
   margin-bottom: 50px;
 }
 
-aside .form {
-  margin-top: 30px;
+.faq-content h4 {
+  margin: 0;
 }
- 
-input[type=text] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-  padding: 1em;
+
+.faq-content p {
+  margin-bottom: 0;
 }
- 
-input[type=button] {
-  width: 100%;
-  padding: 10px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-}
+
+
+
 
 
 /* ==========================================================================
@@ -656,6 +699,7 @@ input[type=button] {
          /* Hero */
         .hero-area h1 {
             width: 60%;
+
         }
      
         /* Aside */
