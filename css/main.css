@@ -139,7 +139,7 @@ h4 {
  
 p {
   font-size: 0.875rem;
-  line-height: 1.285rem;
+  line-height: 1.5;
 	
 }
  
@@ -549,12 +549,33 @@ input[type=button] {
   
   
    @media only screen and (min-width: 768px) {
-    /*Tablet styles here*/
+    /*Tablet styles here***********************************************/
         /* General styles */
         .content-wrapper {
           max-width: 640px;
-          margin: 100px 0;
+          /* margin: 100px 0; */
       }
+
+      h1{
+        font-size: 3rem;
+
+      }
+
+      h2{
+        font-size: 2.25rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      h4 {
+        font-size: 1,125rem;
+      }
+
+      header nav ul li {
+        font-size: 1rem;
+    }
    
       /* Header */
    
@@ -589,6 +610,10 @@ input[type=button] {
       /* Hero Area */
    
       /* Aside */
+
+      aside{
+        padding: 30px 0;
+      }
       aside .content-wrapper {
           margin: 50px 0;
           display: flex;
@@ -598,7 +623,7 @@ input[type=button] {
    
       aside .content-wrapper .form-description,
       aside .content-wrapper .form {        
-          width: 40%;    
+          width: 45%;    
           margin: 0;
       }
    
@@ -614,7 +639,7 @@ input[type=button] {
       }
    
       .features .features-item-description {
-          width: 50%
+          width: 50%;
 
       }
    
@@ -623,14 +648,22 @@ input[type=button] {
         width: 100%;
       }
       
+      .reviews article figure{
+  
+        width: 50%;
+      }
+
       .reviews article{
+        width: 100%;
         display: flex;
         justify-content: space-between;
       }
 
       .reviews article div {
           width: 50%;
+          padding-left: 10px;
       }
+
    
       /* Footer */
       footer .content-wrapper {
@@ -642,8 +675,6 @@ input[type=button] {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        /* width: 100%; */
-   
       }
    
       footer .contact {
@@ -657,15 +688,17 @@ input[type=button] {
 
       /* styles faq page */
 
-      .faq h2{
-        width: 100%;
-      }
-
       .faq .content-wrapper {
         justify-content: space-between;
+        align-items: flex-start;
+        margin: 90px 0;
       }
       .faq-content{
         flex-basis: 45%;
+      }
+
+      .faq h2{
+        width: 100%;
       }
 
       /* style about page */
@@ -689,7 +722,6 @@ input[type=button] {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        /* width: 100%; */
       }
 
     .contact-content div {
@@ -698,14 +730,35 @@ input[type=button] {
   }
   
   @media only screen and (min-width: 1200px) {  
-    /*Desktop styles here */  
+    /*Desktop styles here ***********************************************/  
         .content-wrapper {
              max-width: 960px;
         }
+
+
+
+      h1{
+        font-size: 3.75rem;
+
+      }
+
+      h2{
+        font-size: 3rem;
+      }
+
+      h3, 
+      h4 {
+        font-size: 1.875rem;
+      }
+
+      header nav ul li, p{
+        font-size: 1.125rem;
+     }
+
      
          /* Hero */
         .hero-area h1 {
-            width: 60%;
+            width: 70%;
 
         }
      
@@ -716,10 +769,16 @@ input[type=button] {
      
         aside .content-wrapper .form-description,
         aside .content-wrapper .form {
-            width: 30%;
+            width: 34%;
         }
      
         /* Features */
+
+        .features .features-item-description {
+          width: 62%;
+
+      }
+
         .features h2 {
             width: 90%;
         }
@@ -727,16 +786,18 @@ input[type=button] {
         .features-items article {
             flex-basis: 30%;
         }
+
+
      
         /* Reviews */ 
         .reviews article div {
-            width: 40%;
+            width: 45%;
         }
      
     /********** About Page */
         .mission h2,
         .contact-section .content-wrapper h2 {
-            width: 95%;
+            width: 96%;
         }
      
     
@@ -745,12 +806,13 @@ input[type=button] {
         .faq h2 {
             width: 100%;
         }
+
+        .faq h4{
+          font-size: 1.125rem;
+        }
      
     }
      
-    @media only screen and (min-width: 1200px) {
-    /*Desktop styles here*/
-    }
 
 
 @media print,
