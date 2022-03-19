@@ -270,6 +270,15 @@ footer .social-icons p{
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
+  background-color: #527158;
+  height: 40px;
+  width: 40px;
+
+}
+
+.social-icons i{
+  font-size: 1.3125rem;
 }
 
 footer .copyright {
@@ -708,6 +717,10 @@ input[type=button] {
           text-align: center;
       }
 
+      .contact, .social{
+        width: 35%;
+      }
+
       /* styles faq page */
 
       .faq .content-wrapper {
@@ -827,6 +840,14 @@ input[type=button] {
         .reviews article div {
             width: 45%;
         }
+
+
+      /* footer */
+
+      footer h3{
+        margin: 40px 0;
+
+      }
      
     /********** About Page */
         .mission h2,
