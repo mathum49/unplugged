@@ -738,6 +738,10 @@ input[type=button] {
 
       /* style about page */
 
+      .mission {
+        height: 450px;
+      }
+
       .mission-content{
         display: flex;
         justify-content: space-between;
@@ -751,6 +755,10 @@ input[type=button] {
 
       .map figure {
         padding-bottom: 45%; 
+      }
+
+      .contact-section {
+        height: 400px;
       }
 
       .contact-section .content-wrapper h2 {
@@ -858,6 +866,8 @@ input[type=button] {
         .map figure {
           padding-bottom: 37.5%; 
         }
+
+
      
     
     /********** FAQ Page */
