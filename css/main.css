@@ -194,6 +194,7 @@ header .content-wrapper {
 
 header figure {
   width: 60%;
+  max-width: 220px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -800,6 +801,10 @@ input[type=button] {
 
       header {
         padding: 25px 0;
+      }
+
+      header figure {
+        max-width: 280px;
       }
 
       header nav ul li, p{
